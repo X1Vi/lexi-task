@@ -138,9 +138,10 @@ curl 'http://127.0.0.1:8000/cases/search' \
 
 ---
 
-### Notes:
+### Notes
 
 * `/cases/search` consolidates all previous case search endpoints into one. Simply change `serchType` to query by case number, complainant, respondent, advocate, judge, etc.
 * Some searches may return an empty array depending on backend data and filters.
 * Always ensure the FastAPI server is running before executing `curl` commands.
+* Use this workflow: **create virtual environment → install dependencies → run server → use `curl` to query the API**.
 
